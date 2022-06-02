@@ -1341,6 +1341,8 @@ offset | Int | **No** | If you want the request to return entries starting from 
 ```json5
 {
     "market": "BTC_USDT",
+    "orderId": 3134995325,              //order Id (optional)
+    "clientOrderId": "customId11",      // custom order id; (optional)
     "offset": 0,
     "limit": 100,
     "request": "{{request}}",
@@ -1465,6 +1467,7 @@ offset | Int | **No** | If you want the request to return entries starting from 
 **Request BODY raw:**
 ```json5
 {
+    "clientOrderId": "customId11",      // custom order id; (optional)
     "offset": 0,
     "limit": 100,
     "request": "{{request}}",
@@ -1675,6 +1678,8 @@ offset | Int | **No** | If you want the request to return entries starting from 
 ```json5
 {
     "market": "BTC_USDT",               //optional
+    "orderId": 3134995325,              //order Id (optional)
+    "clientOrderId": "customId11",      // custom order id; (optional)
     "offset": 0,
     "limit": 100,
     "request": "{{request}}",
